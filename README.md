@@ -18,7 +18,7 @@ const ctx = canvas.getContext('2d');
 
 stretch(canvas); // this is where magic happens
 
-// draw like its a fixed size canvas
+// draw like its an old fixed size canvas
 ctx.fillRect(50, 25, 100, 50);
 ```
 
