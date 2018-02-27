@@ -24,5 +24,5 @@ ctx.fillRect(50, 25, 100, 50);
 
 ## What does it do?
 - Adapt canvas resolution to device screen resolution
-- Fit the viewport while preserving w:h ratio
+- Fit canvas to the viewport while preserving w:h ratio
 - Center canvas on the viewport
