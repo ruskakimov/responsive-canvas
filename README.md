@@ -29,9 +29,9 @@ ctx.fillRect(50, 25, 100, 50);
 
 ## Docs
 ```js
-// second argument is optional
+// accepts an optional config object
 stretch(canvas, {
-    center: false, // don't center the canvas
-    maxWidth: 300 // max width in pixels
+    center: false, // skip canvas centering
+    maxWidth: 300  // max width in pixels
 });
 ```
