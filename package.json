@@ -1,6 +1,6 @@
 {
   "name": "stretch-canvas",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ruskakimov/responsive-canvas.git"
   },
   "keywords": [
-    "canvas"
+    "canvas", "stretch", "window", "viewport", "fullscreen", "resize", "responsive", "center"
   ],
   "author": "Rustem Kakimov <ruskakimov@gmail.com>",
   "license": "MIT",
