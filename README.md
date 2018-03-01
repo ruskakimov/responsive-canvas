@@ -29,6 +29,7 @@ ctx.fillRect(50, 25, 100, 50);
 
 ## Docs
 ```js
+//test
 // second parameter is optional
 stretch(canvas, {
     center: false, // don't center the canvas
