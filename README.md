@@ -5,9 +5,9 @@
 3. It now works on any screen.
 
 ## What does it do?
-- Adapt canvas resolution to device screen resolution
-- Fit canvas to the viewport while preserving w:h ratio
-- Center canvas on the viewport
+- Adapts to device resolution
+- Fits to viewport preserving w:h ratio
+- Absolute center
 
 ## Getting started
 **HTML**
@@ -29,8 +29,7 @@ ctx.fillRect(50, 25, 100, 50);
 
 ## Docs
 ```js
-//test
-// second parameter is optional
+// second argument is optional
 stretch(canvas, {
     center: false, // don't center the canvas
     maxWidth: 300 // max width in pixels
