@@ -4,7 +4,7 @@ var coordinate_scaling_factors = null;
 
 function unstretchCoordinates(x, y) {
     if (!scaling_factors) return;
-    return [x / scaling_factors[0], y / scaling_factors[1]];
+    return [x / coordinate_scaling_factors[0], y / coordinate_scaling_factors[1]];
 }
 
 function stretch(canvas, config) {
