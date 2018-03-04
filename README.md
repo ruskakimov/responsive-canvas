@@ -14,7 +14,7 @@
 npm install --save stretch-canvas
 ```
 **or place this script tag before your code**
-```
+```html
 <script src="https://unpkg.com/stretch-canvas@0.2.0/index.js"></script>
 ```
 **HTML**
