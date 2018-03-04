@@ -1,6 +1,6 @@
 (function() {
 
-var scaling_factors = null;
+var coordinate_scaling_factors = null;
 
 function unstretchCoordinates(x, y) {
     if (!scaling_factors) return;
@@ -26,6 +26,8 @@ function stretch(canvas, config) {
         newHeight = newWidth * originalHeight / originalWidth;
     }
 
+    coordinate_scaling_factors = [newWidth / originalWidth, newHeight / originalHeight];
+
     canvas.width = newWidth * dpr;
     canvas.height = newHeight * dpr;
 
@@ -33,8 +35,7 @@ function stretch(canvas, config) {
     canvas.style.height = newHeight + 'px';
 
     var ctx = canvas.getContext('2d');
-    scaling_factors = [canvas.width / originalWidth, canvas.height / originalHeight];
-    ctx.scale(scaling_factors[0], scaling_factors[1]);
+    ctx.scale(canvas.width / originalWidth, canvas.height / originalHeight);
 
     if (config.center) center(canvas);
 }
