@@ -25,6 +25,8 @@ npm install --save stretch-canvas
 ```
 **JS**
 ```js
+const stretch = require('stretch-canvas').stretch;
+
 const canvas = document.getElementById('my-canvas');
 const ctx = canvas.getContext('2d');
 
