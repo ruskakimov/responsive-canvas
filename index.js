@@ -3,7 +3,7 @@
 var coordinate_scaling_factors = null;
 
 function unstretchCoordinates(x, y) {
-    if (!scaling_factors) return;
+    if (!coordinate_scaling_factors) return;
     return [x / coordinate_scaling_factors[0], y / coordinate_scaling_factors[1]];
 }
 
