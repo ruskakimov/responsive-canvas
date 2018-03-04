@@ -10,6 +10,13 @@
 - Absolute center
 
 ## Getting started
+```
+npm install --save stretch-canvas
+```
+**or place this script tag before your code**
+```
+<script src="https://unpkg.com/stretch-canvas@0.2.0/index.js"></script>
+```
 **HTML**
 ```html
 <body>
