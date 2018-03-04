@@ -1,3 +1,5 @@
+(function() {
+
 function stretch(canvas, config) {
     config = config || {};
     config.center = config.center === undefined ? true : config.center;
@@ -42,4 +44,11 @@ function center(canvas) {
     });
 }
 
-module.exports = stretch;
+if (typeof module === 'object') {
+    module.exports = stretch;
+}
+else if (typeof window === 'object') {
+    window.stretch = stretch;
+}
+
+})();
