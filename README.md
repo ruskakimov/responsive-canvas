@@ -15,7 +15,7 @@ npm install --save stretch-canvas
 ```
 **or place this script tag before your code**
 ```html
-<script src="https://unpkg.com/stretch-canvas@0.2.0/index.js"></script>
+<script src="https://unpkg.com/stretch-canvas@0.3.3/index.js"></script>
 ```
 **HTML**
 ```html
@@ -38,9 +38,27 @@ ctx.fillRect(50, 25, 100, 50);
 
 ## Docs
 ```js
+const stretch = require('stretch-canvas').stretch;
+
 // accepts an optional config object
 stretch(canvas, {
     center: false, // skip canvas centering
     maxWidth: 300  // max width in pixels
+});
+```
+
+```js
+// function for converting coordinates to the position on the original canvas before stretch function was applied
+const unstretchCoordinates = require('stretch-canvas').unstretchCoordinates;
+
+canvas.addEventListener('click', function(e) {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const coord = unstretchCoordinates(x, y); // coordinate array [x, y]
+
+    // coord[0] is x
+    // coord[y] is y
+    // do something here
 });
 ```
